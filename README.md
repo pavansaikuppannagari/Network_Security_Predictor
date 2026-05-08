@@ -54,10 +54,11 @@ This can support:
 
 ### 3. Modeling
 
-**Baseline models:**
+**Baseline model:**
 - DecisionTreeClassifier
-- Hyperparametric Tuning
 
+**Accurate model:**
+- Gradient Boosting Classifier
 
 ### 4. Evaluation Metrics
 
@@ -73,7 +74,7 @@ The project focuses on:
 
 > Update this section after training:
 
-- Best model: `DecisionTreeClassifier`  (to be finalized)
+- Best model: `GradientBoostingClassifier`  (to be finalized)
 - F1-score (anomaly class): `01.00`
 - Precision / Recall (anomaly class): `01.00 / 01.00`
 
