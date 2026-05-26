@@ -69,8 +69,8 @@ def add_bg_animation():
 add_bg_animation()
 
 
-with open("proj1.pkl", 'rb') as f:
-    dec = pickle.load(f)
+with open("num_project.pkl", 'rb') as f:
+    model = pickle.load(f)
 
 with open("scaler.pkl", 'rb') as f:
     sc = pickle.load(f)
@@ -144,7 +144,7 @@ if st.button("🔍 SCAN NETWORK FOR ANOMALIES !!"):
 
     test = sc.transform(input_df)
 
-    result = dec.predict(test)[0]
+    result = model.predict(test)[0]
 
     st.subheader("Prediction Result")
     if result == 1:
